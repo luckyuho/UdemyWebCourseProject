@@ -1,0 +1,17 @@
+.navbar-pad {
+  padding: 0.5rem 2rem;
+}
+
+a {
+  margin: 0rem 1rem;
+  font-size: 1.5rem;
+}
+
+.navbar-brand-custom {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  &:hover {
+    color: burlywood;
+  }
+}
