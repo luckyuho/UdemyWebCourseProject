@@ -23,18 +23,63 @@
  </div>
 
 ## 客戶端
-- 以下可分為首頁、註冊、登入、登出、個人資料、課程(student看到的是自己已註冊課程，instructor看到的是自己已開課課程)、{註冊｜開課}(student看到的是搜尋課程，instructor則可建立新課程)
+- 以下可分為首頁、註冊、登入、登出、個人資料、課程(instructor看到的是自己已開課課程，student看到的是自己已註冊課程)、{註冊｜開課}(instructor可建立新課程，student看到的是搜尋課程)
 <div align="center">
 <table>
   <tr>
+    <td>home page</td>
     <td>register</td>
     <td>login</td>
   </tr>
   <tr>
+    <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/homePage.png" width=270 height=340 title="home pgae" /></td>
     <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/register.png" width=270 height=340 title="register" /></td>
     <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/login.png" width=270 height=340 title="login" /></td>
   </tr>
 </table>
 </div>
 
-<img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/instructPostCourse.png" width="200" title="instruct post course" />
+- 其中使用者在register的密碼會先利用bcrypt的hash加密後創建並上傳資料
+- 當login成功後，會將使用者資料自動儲存至瀏覽器中的localStorage中，以方便之後的使用者可自動登入
+
+### 個人資料
+<div align="center">
+<table>
+  <tr>
+    <td>instructor profile</td>
+    <td>student profile</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/instructorProfile.png" width=270 height=340 title="instructor profile" /></td>
+    <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/studentProfile.png" width=270 height=340 title="student profile" /></td>
+  </tr>
+</table>
+</div>
+
+### 課程(instructor看到的是自己已開課課程，student看到的是自己已註冊課程)
+<div align="center">
+<table>
+  <tr>
+    <td>instructor course page</td>
+    <td>student course page</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/instructorCoursePage.png" width=270 height=340 title="instructor profile" /></td>
+    <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/studentCoursePage.png" width=270 height=340 title="student profile" /></td>
+  </tr>
+</table>
+</div>
+
+### {註冊｜開課}(instructor可建立新課程，student看到的是搜尋課程)
+<div align="center">
+<table>
+  <tr>
+    <td>instructor post course</td>
+    <td>student enroll course</td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/instructPostCourse.png" width=270 height=340 title="instructor post course" /></td>
+    <td><img src="https://github.com/luckyuho/UdemyWebCourseProject/blob/main/Project7_MERN/images/studentEnrollCourse.png" width=270 height=340 title="student enroll course" /></td>
+  </tr>
+</table>
+</div>
